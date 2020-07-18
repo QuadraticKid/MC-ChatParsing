@@ -22,7 +22,6 @@ bot.on("chat", (msgData, packetInfo) => {
 });
 
 function processMsg(data) {
-  console.log(data)
     if (
       typeof data.text == "undefined" &&
       typeof data.translate !== "undefined" && 
@@ -32,8 +31,6 @@ function processMsg(data) {
   
       var translate = translations[data.translate] || data.translate;
   
-      // console.log(translate);
-  
       var withdata = [];
   
       if (typeof data.with !== "undefined")
@@ -41,9 +38,6 @@ function processMsg(data) {
           //   console.log(data)
           withdata.push(processMsg(data));
         });
-  
-  
-   
   
   
       if (typeof data.text == "undefined") data.text = "";
@@ -61,8 +55,6 @@ function processMsg(data) {
       var italic = data.italic == true ? "§o" : "";
       var strikethrough = data.strikethrough == true ? "§m" : "";
   
-      //strikethrough
-      // /obfuscated
 
       for(var i = 0;i<(translate.match(/%s/g) || []).length+1;i++){
         var replace = typeof withdata[i] !== 'undefined'?withdata[i]:"";
@@ -110,9 +102,7 @@ function processMsg(data) {
       var italic = data.italic == true ? "§o" : "";
       var strikethrough = data.strikethrough == true ? "§m" : "";
   
-      //strikethrough
-      // /obfuscated
-  
+
       var msg =
         color +
         bold +
