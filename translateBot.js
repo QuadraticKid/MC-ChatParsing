@@ -1,8 +1,8 @@
 var mp = require("minecraft-protocol");
 var translations = require("./translations.json");
 var bot = mp.createClient({
-  host: "server.jucelo.de",
-  port: 22001,
+  host: "kaboom.pw",
+  port: 25565,
   username: "yeetBot",
   version: "1.15.2"
 });
