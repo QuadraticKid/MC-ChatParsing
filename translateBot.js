@@ -120,60 +120,25 @@ function processMsg(data) {
       return msg;
     }
   }
-
+const colors = {
+  "reset": "§r",
+  "white": "§f",
+  "black": "§0",
+  "red": "§c",
+  "dark_red": "§4",
+  "green": "§a",
+  "dark_green": "§2",
+  "light_purple": "§d",
+  "dark_purple": "§5",
+  "blue": "§9",
+  "dark_blue": "§1",
+  "aqua": "§b",
+  "dark_aqua": "§3",
+  "gold": "§6",
+  "yellow": "§e",
+  "gray": "§7",
+  "dark_gray": "§8"
+}
 function getColor(color) {
-  if (color == "reset") {
-    return "§r";
-  }
-  if (color == "white") {
-    return "§f";
-  }
-  if (color == "black") {
-    return "§0";
-  }
-  if (color == "red") {
-    return "§c";
-  }
-  if (color == "dark_red") {
-    return "§4";
-  }
-  if (color == "green") {
-    return "§a";
-  }
-  if (color == "dark_green") {
-    return "§2";
-  }
-  if (color == "light_purple") {
-    return "§d";
-  }
-  if (color == "dark_purple") {
-    return "§5";
-  }
-  if (color == "blue") {
-    return "§9";
-  }
-  if (color == "dark_blue") {
-    return "§1";
-  }
-  if (color == "aqua") {
-    return "§b";
-  }
-  if (color == "dark_aqua") {
-    return "§3";
-  }
-
-  if (color == "gold") {
-    return "§6";
-  }
-
-  if (color == "yellow") {
-    return "§e";
-  }
-  if (color == "gray") {
-    return "§7";
-  }
-  if (color == "dark_gray") {
-    return "§8";
-  }
-  return "";
+  return colors[clr] == undefined ? "" : colors[clr];
 }
