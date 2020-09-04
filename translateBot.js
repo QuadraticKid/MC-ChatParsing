@@ -139,6 +139,6 @@ const colors = {
   "gray": "§7",
   "dark_gray": "§8"
 }
-function getColor(color) {
-  return colors[clr] == undefined ? "" : colors[clr];
+function getColor(cl) {
+  return colors[cl] == undefined ? "" : colors[cl];
 }
