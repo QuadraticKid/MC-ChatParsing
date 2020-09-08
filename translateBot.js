@@ -6,6 +6,7 @@ var bot = mp.createClient({
   username: "yeetBot",
   version: "1.15.2"
 });
+//test
 
 bot.on("login", () => {
   console.log("logged in");
