@@ -10,6 +10,6 @@ Happy botting!
 
 (Also if you use this in your bot or just like it maybe consider giving it a star? :D)
 
-#Notes
+# Notes
 You can get an updated translations.json from decompiling the minecraft version jar and grabbing assets/minecraft/lang/en_us.json
 1.16 chat hex colors do not show up at all in processed text
