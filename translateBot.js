@@ -42,7 +42,7 @@ function processMsg(data) {
   
   
       if (typeof data.text == "undefined") data.text = "";
-      if (typeof data.color == "undefined") data.color = "";
+      if (typeof data.color == "undefined") data.color = "reset";
       if (typeof data.bold == "undefined") data.bold = false;
       if (typeof data.obfuscated == "undefined") data.obfuscated = false;
       if (typeof data.underlined == "undefined") data.underlined = false;
@@ -89,7 +89,7 @@ function processMsg(data) {
         return data;
     } else {
       if (typeof data.text == "undefined") data.text = "";
-      if (typeof data.color == "undefined") data.color = "";
+      if (typeof data.color == "undefined") data.color = "reset";
       if (typeof data.bold == "undefined") data.bold = false;
       if (typeof data.obfuscated == "undefined") data.obfuscated = false;
       if (typeof data.underlined == "undefined") data.underlined = false;
